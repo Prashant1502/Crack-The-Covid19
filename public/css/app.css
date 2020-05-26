@@ -271,7 +271,7 @@ input:-moz-placeholder {
   color: #fff;
   overflow-x: auto;
 
-  width: 45%;
+  width: 0;
   max-width: 32.0625rem;
   min-width: 29.6875rem;
 }
@@ -283,6 +283,8 @@ input:-moz-placeholder {
 }
 
 #payload-column .header-text, #payload-column #payload-initial-message {
+    display:flex;
+    flex:1;
   font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   color: #9E9E9E;
@@ -290,7 +292,7 @@ input:-moz-placeholder {
   padding: 0.5rem;
   padding-left: 2.5rem;
   background: #383D3E;
-  width:0;
+  width: auto;
 }
 
 .hide {
