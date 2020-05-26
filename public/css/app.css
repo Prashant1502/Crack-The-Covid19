@@ -60,7 +60,7 @@ div {
   -ms-display: flex;
   -ms-flex-direction: row;
   width:700px;
-  margin-right:1500px;
+  margin-left:1500px;
 }
 
 .responsive-column {
