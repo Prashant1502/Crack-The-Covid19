@@ -62,7 +62,7 @@ div {
   flex-direction: row;
   -ms-display: flex;
   -ms-flex-direction: row;
-  width: 700px;
+  width: 1000px;
   position: absolute;
 }
 
@@ -283,12 +283,14 @@ input:-moz-placeholder {
   width: 45%;
   max-width: 32.0625rem;
   min-width: 29.6875rem;
+  opacity:0;
 }
 
 #payload-column.full {
   width: 100%;
   max-width: none;
   min-width: initial;
+  opacity:0;
 }
 
 #payload-column .header-text,
