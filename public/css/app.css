@@ -1,4 +1,4 @@
-* {
+ * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -62,7 +62,7 @@ div {
   flex-direction: row;
   -ms-display: flex;
   -ms-flex-direction: row;
-  width: 1000px;
+  width: 700px;
   position: absolute;
 }
 
@@ -280,8 +280,6 @@ input:-moz-placeholder {
   line-height: 1.125rem;
   background-color: #23292a;
   color: #fff;
-  overflow-x: hidden;
-  left: 300px;
   width: 45%;
   max-width: 32.0625rem;
   min-width: 29.6875rem;
@@ -303,8 +301,7 @@ input:-moz-placeholder {
   padding: 0.5rem;
   padding-left: 2.5rem;
   background: #383d3e;
-  overflow-x: hidden;
-  margin-left: 500px;
+  opacity:0;
 }
 
 .hide {
