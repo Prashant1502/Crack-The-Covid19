@@ -71,7 +71,7 @@
       /*MID VIEW*/
       .mid-content{
           display:flex;
-          flex-direction:column;
+          flex-direction:row;
           width:fit-content;
       }
       .mid{
