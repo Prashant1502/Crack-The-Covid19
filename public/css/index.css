@@ -192,6 +192,9 @@
   bottom: 0;
 }
 .watson {
+    display:flex;
+    align-content:center;
+    justify-content:center;
   height: 100%;
   width: 0;
   position: fixed;
