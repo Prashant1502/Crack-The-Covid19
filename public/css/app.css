@@ -59,8 +59,8 @@ div {
   flex-direction: row;
   -ms-display: flex;
   -ms-flex-direction: row;
-  width:700px;
-  margin-left:1500px;
+  width:1000px;
+  position:absolute;
 }
 
 .responsive-column {
@@ -271,9 +271,9 @@ input:-moz-placeholder {
   line-height: 1.125rem;
   background-color: #23292A;
   color: #fff;
-  overflow-x: auto;
-
-  width: 0;
+  overflow-x: hidden;
+  left:200px;
+  width: 45%;
   max-width: 32.0625rem;
   min-width: 29.6875rem;
 }
@@ -294,7 +294,6 @@ input:-moz-placeholder {
   padding: 0.5rem;
   padding-left: 2.5rem;
   background: #383D3E;
-  width: auto;
   overflow-x:hidden;
 }
 
