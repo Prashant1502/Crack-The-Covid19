@@ -17,7 +17,7 @@
       #top-nav-optn{
         display: flex;
         flex: 1;
-        flex-wrap: 1;
+        flex-wrap: wrap;
         padding: 3px;
         border: 2px solid #06070E;
         border-radius: 20px;
@@ -65,7 +65,6 @@
       #title{
         display: flex;
         align-self: center;
-        justify-self: center;
         margin: 35px;
       }
       
@@ -84,7 +83,7 @@
       }
       .watson-assistant{
         flex:1;
-        flex-direction:column;
+        flex-direction:row;
         border: 2px solid grey;
         height: auto;
         width: auto;
