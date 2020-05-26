@@ -34,23 +34,16 @@
               <span id="top-nav-optn" onclick="parent.location='test1.html'"><b>Home</b></span>
               <span id="top-nav-optn" onclick="parent.location='contact.html'"><b>Contact</b></span>
               <span id="top-nav-optn" onclick="parent.location='about.html'"><b>About</b></span>
-              
-            </div>
+              <span id="top-nav-optn">
+          <span><b>Watson Assistant</b></span>
+          <div id="watson-side-nav-btn" onclick="openWatson()">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
           </div>
-<div class="mid-content">
-        <div class="mid">
-          <form name="queryInput" action="." method="POST">
-            <fieldset id="inputField">
-                <legend style="font-family: Cambria, serif;font-weight:bolder;font-size:largers">Input values:</legend>
-                <p style="font-family: Cambria, serif;">Postal Code: <input name="query" type="number" required></p><br>
-                <input type="submit" style="padding: 5px;"><br>
-                <div id="result">
-                </div>
-            </fieldset>
-          </form>
-        </div>
-        
-        <div class="watson-assistant">
+          <div id="myWatson" class="watson">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeWatson()">&times;</a>
+            <div class="watson-assistant">
             <div id="view-change-button" class="button" onclick="PayloadPanel.togglePanel(event, this)">
             <img class="option full" src="../img/Chat Button.png">
             <img class="option not-full" src="../img/Code Button.png">
@@ -89,6 +82,25 @@
         </div>
 
         </div>
+          </div>
+          </span>
+              
+            </div>
+          </div>
+<div class="mid-content">
+        <div class="mid">
+          <form name="queryInput" action="." method="POST">
+            <fieldset id="inputField">
+                <legend style="font-family: Cambria, serif;font-weight:bolder;font-size:largers">Input values:</legend>
+                <p style="font-family: Cambria, serif;">Postal Code: <input name="query" type="number" required></p><br>
+                <input type="submit" style="padding: 5px;"><br>
+                <div id="result">
+                </div>
+            </fieldset>
+          </form>
+        </div>
+        
+        
     </div>
         <div class="bottom">
             <div id="bottom-left"></div>
@@ -106,6 +118,14 @@
           function closeNav() {
             document.getElementById('mySidenav').style.width = '0';
           }
+          
+          function openWatson() {
+            document.getElementById("myWatson").style.width = "350px";
+            }
+
+            function closeWatson() {
+                document.getElementById("myWatson").style.width = "0";
+            }
     </script>
   <script src="js/common.js"></script>
   <script src="js/api.js"></script>
