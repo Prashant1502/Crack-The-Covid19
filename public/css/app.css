@@ -60,6 +60,7 @@ div {
   -ms-display: flex;
   -ms-flex-direction: row;
   width:700px;
+  margin-right:1500px;
 }
 
 .responsive-column {
@@ -294,6 +295,7 @@ input:-moz-placeholder {
   padding-left: 2.5rem;
   background: #383D3E;
   width: auto;
+  overflow-x:hidden;
 }
 
 .hide {
