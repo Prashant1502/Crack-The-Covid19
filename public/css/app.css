@@ -59,6 +59,7 @@ div {
   flex-direction: row;
   -ms-display: flex;
   -ms-flex-direction: row;
+  width:500px;
 }
 
 .responsive-column {
