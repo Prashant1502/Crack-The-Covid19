@@ -71,6 +71,19 @@ div.top{
       
       /*MID VIEW*/
       div.mid{
+        flex:1;
+        border: 2px solid grey;
+        height: auto;
+        width: auto;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      div.watson-assistant{
+          flex:1;
         border: 2px solid grey;
         height: auto;
         width: auto;
