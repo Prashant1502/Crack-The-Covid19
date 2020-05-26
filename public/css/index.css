@@ -77,13 +77,11 @@
         margin-top: 20px;
         padding: 20px;
         border-radius: 30px;
-        display: flex;
         align-content: center;
         justify-content: center;
       }
       .watson-assistant{
         flex:1;
-        flex-direction:row;
         border: 2px solid grey;
         height: auto;
         width: auto;
