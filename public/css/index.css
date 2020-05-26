@@ -69,8 +69,14 @@
       }
       
       /*MID VIEW*/
+      .mid-content{
+          display:flex;
+          flex-direction:column;
+          width:fit-content;
+      }
       .mid{
         flex:2;
+        display:flex;
         border: 2px solid grey;
         height: auto;
         width: auto;
@@ -91,6 +97,7 @@
         display: flex;
         align-content: center;
         justify-content: center;
+        overflow:hidden;
       }
       .sidenav {
         height: 100%;
