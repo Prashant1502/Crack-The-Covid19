@@ -1,0 +1,282 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+      /*TOP VIEW*/
+      div.top {
+        display: flex;
+        border-bottom-left-radius: 70px;
+        height: 200px;
+        width: auto;
+        background-color: rgb(61, 90, 33);
+      }
+      div.top-nav {
+        display: flex;
+        align-self: center;
+        flex: 1;
+        padding: 10px;
+        height: 50px;
+        border-radius: 45px;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgb(255, 255, 255)),
+          to(rgba(36, 36, 36, 0.979))
+        );
+      }
+      span#top-nav-optn {
+        display: flex;
+        flex: 1;
+        flex-wrap: 1;
+        padding: 3px;
+        border: 2px solid #06070e;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: larger;
+        color: #06070e;
+        transition: 0.2s;
+      }
+      #top-nav-optn:hover {
+        cursor: pointer;
+        background-color: #06070e;
+      }
+      #top-nav-optn:hover {
+        color: #f1f1f1;
+      }
+
+      #container-side-nav-btn {
+        display: inline-block;
+        cursor: pointer;
+        align-self: center;
+        margin-left: 5px;
+      }
+      #bar1,
+      #bar2,
+      #bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      #container-side-nav-btn:hover #bar1 {
+        background-color: #f1f1f1;
+      }
+      #container-side-nav-btn:hover #bar2 {
+        background-color: #f1f1f1;
+      }
+      #container-side-nav-btn:hover #bar3 {
+        background-color: #f1f1f1;
+      }
+      div#icon {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom-left-radius: 68px;
+        border-top-right-radius: 70px;
+        background-color: #06070e;
+      }
+      div#title {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        margin: 35px;
+      }
+
+      /*MID VIEW*/
+      div.mid {
+        border: 2px solid grey;
+        height: auto;
+        width: auto;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 8;
+        left: 0;
+        background-color: #06070e;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 18px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+
+      div.members {
+        display: inline-block;
+        align-content: center;
+        justify-content: center;
+        font-size: larger;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      /*BOTTOM VIEW*/
+      div.bottom {
+        border: 2px solid grey;
+        height: auto;
+        width: auto;
+        margin-top: 20px;
+        padding: 20px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+      }
+      div#bottom-left {
+        padding: 10px;
+        flex-grow: 1;
+        border: 1px solid grey;
+        border-left: hidden;
+        border-top: hidden;
+        border-bottom: hidden;
+        height: auto;
+        width: auto;
+      }
+      div#bottom-right {
+        padding: 10px;
+        border: 1px solid grey;
+        border-right: hidden;
+        border-top: hidden;
+        border-bottom: hidden;
+        height: auto;
+        width: auto;
+      }
+      #map {
+        height: 100%;
+        justify-self: center;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div id="icon">
+        <div id="container-side-nav-btn" onclick="openNav()">
+          <div id="bar1"></div>
+          <div id="bar2"></div>
+          <div id="bar3"></div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a
+            href="https://covid-assistant-simple-prashant.eu-gb.mybluemix.net/watson.html"
+            >Watson Assistant</a
+          >
+        </div>
+        <div id="title">
+          <h1
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              color: white;
+            "
+          >
+            Crack Covid-19
+          </h1>
+        </div>
+      </div>
+      <div class="top-nav">
+        <span id="top-nav-optn" onclick="parent.location='index.html'"
+          ><b>Home</b></span
+        >
+        <span id="top-nav-optn" onclick="parent.location='contact.html'"
+          ><b>Contact</b></span
+        >
+        <span id="top-nav-optn" onclick="parent.location='about.html'"
+          ><b>About</b></span
+        >
+        <span
+          id="top-nav-optn"
+          onclick="window.location='https://covid-assistant-simple-prashant.eu-gb.mybluemix.net/watson.html'"
+          ><b>Watson Assistant</b></span
+        >
+      </div>
+    </div>
+
+    <div class="mid">
+      <div class="members">
+        <p>
+          This project is devoted to help people find the nearest Covid research
+          centre in India.
+        </p>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div id="bottom-left">
+        <ul>
+          <li>
+            To check the nearest lab to your loation, click the button in the
+            middle section of website which says "Click this button to check
+            nearest lab"
+          </li>
+        </ul>
+      </div>
+      <div id="bottom-right">
+        <p>
+          For further queries, mail us. Our mail ids are given on contact page.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
