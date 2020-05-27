@@ -72,7 +72,7 @@
       .mid{
         display:flex;
         align-content:center;
-        justify-content:flex-end;
+        justify-content:center;
         border: 2px solid grey;
         height: auto;
         margin-top: 20px;
