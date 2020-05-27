@@ -70,8 +70,9 @@
       
       /*MID VIEW*/
       .mid{
-        display:inline-block;
-        vertical-align:middle;
+        display:inline-flex;
+        align-content:center;
+        justify-content:center;
         border: 2px solid grey;
         height: auto;
         margin-top: 20px;
