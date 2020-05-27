@@ -69,22 +69,12 @@
       }
       
       /*MID VIEW*/
-      .mid-content{
-          display:flex;
-          flex-direction:row;
-          width:fit-content;
-          overflow-x:hidden;
-      }
       .mid{
-        flex:1;
-        display:flex;
         border: 2px solid grey;
         height: auto;
         margin-top: 20px;
         padding: 20px;
         border-radius: 30px;
-        align-content: center;
-        justify-content: center;
       }
       .sidenav {
         height: 100%;
@@ -169,10 +159,3 @@
         margin: 0;
         padding: 0;
       }
-
-    .watson{
-        display:flex;
-        flex:1;
-        align-content:center;
-        justify-content:center;
-    }
