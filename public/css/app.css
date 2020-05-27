@@ -80,6 +80,7 @@ div {
   max-width: 25rem;
   min-width: 9.375rem;
   background: #cdc9c9;
+  overflow: scroll;
 }
 
 .user-typing {
