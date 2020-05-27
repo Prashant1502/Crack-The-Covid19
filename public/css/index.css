@@ -70,7 +70,8 @@
       
       /*MID VIEW*/
       .mid{
-        display:inline-flex;
+        display:flex;
+        flex:1;
         align-content:center;
         justify-content:center;
         border: 2px solid grey;
