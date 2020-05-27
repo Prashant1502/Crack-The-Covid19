@@ -70,13 +70,11 @@
       
       /*MID VIEW*/
       .mid{
-        display:flex;
-        align-content:center;
-        justify-content:center;
+        display:inline-block;
+        vertical-align:middle;
         border: 2px solid grey;
         height: auto;
         margin-top: 20px;
-        padding: 20px;
         border-radius: 30px;
       }
       .sidenav {
