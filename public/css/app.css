@@ -31,6 +31,7 @@ div {
   right: 0.3125rem;
   line-height: 3.125rem;
   vertical-align: middle;
+  opacity:0;
 }
 
 #view-change-button img {
@@ -38,14 +39,17 @@ div {
   width: 100%;
   height: 100%;
   vertical-align: middle;
+  opacity:0;
 }
 
 #view-change-button:not(.full) .not-full {
   display: inline-block;
+  opacity:0;
 }
 
 #view-change-button.full .full {
   display: inline-block;
+  opacity:0;
 }
 
 #contentParent {
@@ -271,14 +275,15 @@ input:-moz-placeholder {
   color: #fff;
   overflow-x: auto;
   opacity:0;
-  width:0;
+  width: 45%;
   max-width: 32.0625rem;
   min-width: 29.6875rem;
-  
 }
 
 #payload-column.full {
-  width: 0;
+  width: 100%;
+  max-width: none;
+  min-width: initial;
   opacity:0;
 }
 
@@ -291,7 +296,6 @@ input:-moz-placeholder {
   padding-left: 2.5rem;
   background: #383D3E;
   opacity:0;
-  width:0;
 }
 
 .hide {
