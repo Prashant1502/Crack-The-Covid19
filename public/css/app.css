@@ -54,6 +54,7 @@ div {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  height: auto;
   flex-direction: row;
   -ms-display: flex;
   -ms-flex-direction: row;
@@ -75,7 +76,7 @@ div {
   flex-direction: column;
   height: 90%;
   padding: 0.9375rem 0 0.625rem 0;
-  margin: auto;
+  margin: 10px;
   text-align: left;
   max-width: 25rem;
   min-width: 9.375rem;
